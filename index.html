@@ -2,13 +2,17 @@
 <html>
   <head>
     <title> My Title </title>
-
+    <meta charset="utf-8">
   </head>
   <body>
     <header height="100"><b> My SITE </b></header>
     <h1>This is My site lol</h1>
     <h2>Is it?</h2>
     <h3>Yes it is</h3>
+    <br />
+    <a href="1st_try(Football Weekly).html">
+      <h1>Check out Football news here!</h1>
+    </a>
     <main>
         <section>
           Hello div
@@ -17,42 +21,92 @@
           <span><b><i>ehyy,</i></b></span>
           <br><br><br>
           <span><a href="http://google.com">supp?</a></span>
-      </section>
-      <br>
-      <br>
-      <section> Articles
+        </section>
+        <br>
+        <br>
+        <section> Articles
           <br>
           <a href="#"> Article Title</a>
           <p>This is sample para for the arctile you are wrting </p>
-      </section>
-      <article>
+        </section>
+        <article>
           <a href="#"> Article Title</a>
           <p>This is sample para for the arctile you are wrting </p>
-      </article>
+        </article>
 
-      <table border="3px">
-          <thead>
-              <tr>
-                <th width="100">Type</th>
-                <th>Ingredients</th>
-                <th>Price</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                <td>Pepperoni</td>
-                <td>Pepperoni,Cheese</td>
-                <td>20</td>
-              </tr>
-              <tr>
-                <td>Margherita</td>
-                <td>Margherita Cheese</td>
-                <td>18.99</td>
-              </tr>
-          </tbody>
-      </table>
+        <section id="contact-form">
+          <h2>Place Order</h2>
+          <form method="GET" action="place-order.php">
+            <h4>Delivery</h4>
+            <input name="delivery-mode" type="radio" value="delivery"> Delivery <br />
+            <input name="delivery-mode" type="radio" value="pickup"> Pickup <br />
+            <h4>Address</h4>
+            <input name="adress1" placeholder="Adress line 1" class="lg-input"> <br />
+            <input name="adress2" placeholder="Adress line 2" class="lg-input"> <br />
 
-    </main>
-  </body>
+            <input name="city" placeholder="City" class="sm-input">
+            <input name="state" placeholder="State" class="sm-input"><br />
+            <input name="zip" placeholder="Zip Code" class="sm-input">
+            <br />
+            <br />
+
+            <h4>Size</h4>
+            <select name="size"> <br />
+                <option value="12">12" - $15.99
+                <option value="16">16" - $18.99
+                <option value="18">18" - $20.99
+                <option value="36">36" - $34.99
+            </select>
+
+
+
+            <h4>Ingredients</h4>
+
+            <input name="ingredient" type="checkbox" value="pepperoni"> Pepperoni <br />
+            <input name="ingredient" type="checkbox" value="salami"> Salami <br />
+            <input name="ingredient" type="checkbox" value="bacon"> Bacon <br />
+            <input name="ingredient" type="checkbox" value="sausage"> Sausage <br />
+
+            <br />
+            <button type="submit">Place Order </button>
+
+          </form>
+        </section>
+
+        <br>
+        <table border="4px">
+          <caption>This is a table! <caption>
+            <thead>
+                <tr>
+                  <th width="150">Type</th>
+                  <th width="300">Ingredients</th>
+                  <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>Pepperoni</td>
+                  <td>Pepperoni,Cheese</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td colspan="1">Margherita</td>
+                  <td>Margherita Cheese</td>
+                  <td>18.99</td>
+                </tr>
+              <tr>
+                <td rowspan="2">Meat lovers</td>
+                <td>bacon,chicken,sausage,pepperoni</td>
+                <td>24.99</td>
+              </tr>
+              <tr>
+                <td>bacon,chicken,sausage,ham</td>
+                <td>24.99</td>
+              </tr>
+            </tbody>
+        </table>
+
+      </main>
+    </body>
   <footer>&copy; Copyright 2020 </footer>
 </html>
